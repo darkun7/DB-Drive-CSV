@@ -10,7 +10,7 @@ def formating(column, df):
         for __ in range(len(column)):
             attribute = column[__]
             value = res[_][__]
-            item[attribute] = value
+            item[attribute] = str(value)
         records.append(item)
     return records
 
