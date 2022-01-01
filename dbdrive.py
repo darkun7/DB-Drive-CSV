@@ -15,18 +15,8 @@ def formating(column, df):
     return records
 
 
-def main(request):
-    index = request.form.get("index")
-    identifier = request.form.get("identifier")
-    csv = request.form.get("csv")
+def main(index, identifier, df):
 
-    if (csv is None):
-        return jsonify({"response": None, "message": "Invalid CSV URI"})
-    if (identifier is None):
-        return jsonify({"response": None, "message": "Invalid Identifier"})
-
-    path = 'https://drive.google.com/uc?export=download&id=' + csv.split('/')[-2] 
-    df = pd.read_csv(path)
     column = df.columns
     
     if (index is None):
