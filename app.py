@@ -2,10 +2,12 @@
 #!/usr/bin/env python
 import os
 from flask import Flask, render_template, request, json, send_from_directory
+from flask_cors import CORS, cross_origin
 # import dbdrive as connect
 from reader import *
 
 app = Flask(__name__, template_folder='template')
+CORS(app)
 
 @app.route("/")
 def landingPage():
