@@ -1,7 +1,7 @@
 # DB Drive CSV
 This is app is can be used to access CSV file as JSON from Google Drive.
 # How To Use
-Send POST request on {URL} as Form Data, for example:
+Send POST request on [DBDrive](https://dbdrive.herokuapp.com/) as Form Data, for example:
 ```
 {
     "index": 1,
