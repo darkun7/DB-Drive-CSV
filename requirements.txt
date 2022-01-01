@@ -1,5 +1,6 @@
 Flask==2.0.1
 Flask-Cors==3.0.10
+openpyxl==3.0.7
 pandas
 numpy
 gunicorn
