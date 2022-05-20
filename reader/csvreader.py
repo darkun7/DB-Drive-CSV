@@ -13,6 +13,6 @@ def main(request):
         return jsonify({"response": None, "message": "Invalid Identifier"})
 
     path = 'https://drive.google.com/uc?export=download&id=' + csv.split('/')[-2] 
-    df = pd.read_csv(path)
+    df = pd.read_csv(connect.stream(path))
 
     return connect.main(index, identifier, df)

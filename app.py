@@ -14,6 +14,11 @@ def landingPage():
     return render_template("index.html")
 
 @app.route("/",methods=['POST'])
+def default():
+    res = csvreader.main(request)
+    return res
+
+@app.route("/csv",methods=['POST'])
 def readCSV():
     res = csvreader.main(request)
     return res

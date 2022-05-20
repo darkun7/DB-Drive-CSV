@@ -9,7 +9,7 @@ you may use example below:
 ```
 { 
 "index": 1, 
-"identifier": "ID"
+"identifier": "ID",
 "csv": "https://drive.google.com/file/d/1xxk2ASmwnPeAym1or8tCl5Xi6QTcmAqh/view?usp=sharing" 
 }
 ```
@@ -19,7 +19,7 @@ you may use example below:
 ```
 {
 "index": 1, 
-"identifier": "ID" 
+"identifier": "ID",
 "xls": "https://docs.google.com/spreadsheets/d/1DM_-HOWXMsPmshnIq-wfJq7Jtc4pacLC6bUC8c1XzpU/edit?usp=sharing"
 }
 ```

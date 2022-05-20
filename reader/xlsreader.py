@@ -13,6 +13,6 @@ def main(request):
         return jsonify({"response": None, "message": "Invalid Identifier"})
     
     path = 'https://docs.google.com/spreadsheets/d/' + xls.split('/')[-2]  + '/export'
-    df = pd.read_excel(path)
+    df = pd.read_excel(connect.stream(path))
 
     return connect.main(index, identifier, df)
